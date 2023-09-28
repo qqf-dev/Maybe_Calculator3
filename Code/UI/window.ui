@@ -17,11 +17,11 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>“眉笔杯”DLC-一探萨米计分器</string>
+   <string>第三届“眉笔杯”计分器</string>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../deploy/rosa.ico</normaloff>../deploy/rosa.ico</iconset>
+    <normaloff>../picture/rosa.ico</normaloff>../picture/rosa.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_6">
