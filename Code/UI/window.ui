@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>978</width>
-    <height>667</height>
+    <width>1920</width>
+    <height>1080</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -21,7 +21,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../picture/rosa.ico</normaloff>../picture/rosa.ico</iconset>
+    <normaloff>rosa.ico</normaloff>rosa.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_6">
@@ -112,13 +112,13 @@
       <property name="minimumSize">
        <size>
         <width>0</width>
-        <height>0</height>
+        <height>80</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
         <width>16777215</width>
-        <height>50</height>
+        <height>80</height>
        </size>
       </property>
       <property name="styleSheet">
@@ -149,7 +149,7 @@ p, li { white-space: pre-wrap; }
        </font>
       </property>
       <property name="text">
-       <string>加分重置</string>
+       <string>恢复默认</string>
       </property>
      </widget>
     </item>
@@ -309,7 +309,7 @@ p, li { white-space: pre-wrap; }
            <string>初始存款数</string>
           </property>
          </widget>
-         <widget class="QSpinBox" name="n_board_2">
+         <widget class="QSpinBox" name="coin_init">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -351,7 +351,7 @@ p, li { white-space: pre-wrap; }
            <string>结束存款数</string>
           </property>
          </widget>
-         <widget class="QSpinBox" name="n_board_3">
+         <widget class="QSpinBox" name="coin_final">
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -642,7 +642,7 @@ p, li { white-space: pre-wrap; }
            </widget>
           </item>
           <item>
-           <widget class="QCheckBox" name="ex_b">
+           <widget class="QCheckBox" name="ex_b_1">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -715,7 +715,7 @@ p, li { white-space: pre-wrap; }
            <number>0</number>
           </property>
           <item>
-           <widget class="QRadioButton" name="end_3">
+           <widget class="QRadioButton" name="end_x">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -729,7 +729,7 @@ p, li { white-space: pre-wrap; }
              </font>
             </property>
             <property name="text">
-             <string>未通关</string>
+             <string>无六层</string>
             </property>
             <property name="checked">
              <bool>true</bool>
@@ -737,7 +737,7 @@ p, li { white-space: pre-wrap; }
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="end_4">
+           <widget class="QRadioButton" name="end_3">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -774,6 +774,25 @@ p, li { white-space: pre-wrap; }
             </property>
             <property name="text">
              <string>无红色战斗加成</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="ex_t">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>无树篱</string>
             </property>
            </widget>
           </item>
@@ -815,117 +834,101 @@ p, li { white-space: pre-wrap; }
            <pointsize>18</pointsize>
           </font>
          </property>
-         <widget class="QSpinBox" name="sb_4">
-          <property name="geometry">
-           <rect>
-            <x>280</x>
-            <y>0</y>
-            <width>41</width>
-            <height>31</height>
-           </rect>
-          </property>
-         </widget>
-         <widget class="QSpinBox" name="sb_3">
-          <property name="geometry">
-           <rect>
-            <x>100</x>
-            <y>0</y>
-            <width>51</width>
-            <height>31</height>
-           </rect>
-          </property>
-         </widget>
-         <widget class="QSpinBox" name="sb_5">
-          <property name="geometry">
-           <rect>
-            <x>460</x>
-            <y>0</y>
-            <width>41</width>
-            <height>31</height>
-           </rect>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_68">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>98</width>
-            <height>27</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Arial</family>
-            <pointsize>18</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>六星干员</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_69">
-          <property name="geometry">
-           <rect>
-            <x>170</x>
-            <y>0</y>
-            <width>98</width>
-            <height>27</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Arial</family>
-            <pointsize>18</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>五星干员</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="label_70">
-          <property name="geometry">
-           <rect>
-            <x>350</x>
-            <y>0</y>
-            <width>98</width>
-            <height>27</height>
-           </rect>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Arial</family>
-            <pointsize>18</pointsize>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>四星干员</string>
-          </property>
-         </widget>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_68">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>18</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>六星干员</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="cb_6">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_69">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>18</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>五星干员</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="cb_5">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_70">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>18</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>四星干员</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="cb_4">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
        <item row="6" column="0">
@@ -1236,108 +1239,6 @@ p, li { white-space: pre-wrap; }
           <property name="spacing">
            <number>0</number>
           </property>
-          <item row="0" column="0" colspan="3">
-           <widget class="QComboBox" name="em_1">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>280</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial</family>
-              <pointsize>18</pointsize>
-             </font>
-            </property>
-            <item>
-             <property name="text">
-              <string>无加分紧急</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>冰海凝影</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>狡兽九窟</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>坍缩体的午后</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>公司纠葛</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>应用测试</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>禁区</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>本能污染</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>亡者行军</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>乐理之灾</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>混乱的表象</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>何处无山海</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>求敌得敌</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>生人勿近</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>生灵的终点</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>霜与沙</string>
-             </property>
-            </item>
-           </widget>
-          </item>
           <item row="1" column="1">
            <widget class="QCheckBox" name="em_b">
             <property name="minimumSize">
@@ -1357,8 +1258,8 @@ p, li { white-space: pre-wrap; }
             </property>
            </widget>
           </item>
-          <item row="1" column="0">
-           <widget class="QCheckBox" name="em_a">
+          <item row="1" column="4" colspan="2">
+           <widget class="QCheckBox" name="em_d">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -1372,26 +1273,7 @@ p, li { white-space: pre-wrap; }
              </font>
             </property>
             <property name="text">
-             <string>无漏</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <widget class="QCheckBox" name="em_c">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial</family>
-              <pointsize>18</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>树篱</string>
+             <string>冰海/乐理额外</string>
             </property>
            </widget>
           </item>
@@ -1482,6 +1364,122 @@ p, li { white-space: pre-wrap; }
             </widget>
            </widget>
           </item>
+          <item row="1" column="2">
+           <widget class="QCheckBox" name="em_c">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>树篱</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="3">
+           <widget class="QComboBox" name="em_1">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>280</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <item>
+             <property name="text">
+              <string>无加分紧急</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>冰海凝影</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>狡兽九窟</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>坍缩体的午后</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>公司纠葛</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>禁区</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>本能污染</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>亡者行军</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>乐理之灾</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>混乱的表象</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>何处无山海</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>求敌得敌</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>生人勿近</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>生灵的终点</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>霜与沙</string>
+             </property>
+            </item>
+           </widget>
+          </item>
           <item row="0" column="4">
            <widget class="QWidget" name="widget_45" native="true">
             <property name="minimumSize">
@@ -1507,25 +1505,6 @@ p, li { white-space: pre-wrap; }
             </property>
            </widget>
           </item>
-          <item row="1" column="4" colspan="2">
-           <widget class="QCheckBox" name="em_d">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial</family>
-              <pointsize>18</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>冰海大量坍缩体</string>
-            </property>
-           </widget>
-          </item>
           <item row="1" column="6">
            <widget class="QWidget" name="widget_51" native="true">
             <property name="minimumSize">
@@ -1548,6 +1527,25 @@ p, li { white-space: pre-wrap; }
             </property>
             <property name="layoutDirection">
              <enum>Qt::RightToLeft</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="em_a">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>无漏</string>
             </property>
            </widget>
           </item>
@@ -1769,7 +1767,7 @@ p, li { white-space: pre-wrap; }
            </widget>
           </item>
           <item row="0" column="4">
-           <widget class="QSpinBox" name="hd_hero_6">
+           <widget class="QSpinBox" name="hd_justice">
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -1882,7 +1880,7 @@ p, li { white-space: pre-wrap; }
      </widget>
     </item>
     <item row="5" column="4" colspan="3">
-     <widget class="QLabel" name="label_111">
+     <widget class="QLabel" name="label_show">
       <property name="text">
        <string/>
       </property>
@@ -1895,7 +1893,7 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>978</width>
+     <width>1920</width>
      <height>22</height>
     </rect>
    </property>

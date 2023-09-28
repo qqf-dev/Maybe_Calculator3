@@ -1,1 +1,1 @@
-pyinstaller -w -F -i hongxue.ico main.py
+pyinstaller -w -F -i ./picture/rosa.ico main.py -p ./UI/window.py -p ./UI/icon_rc.py
